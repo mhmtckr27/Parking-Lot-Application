@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainFrame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="880.0" prefWidth="1208.0" style="-fx-border-color: DC6180; -fx-border-width: 5; -fx-border-radius: 50; -fx-background-radius: 50;" styleClass="mainScreenBackground" stylesheets="@background.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainScreenController">
+
+   <children>
+      <JFXButton fx:id="close" buttonType="RAISED" layoutX="1125.0" layoutY="24.0" onAction="#onCloseButton" prefHeight="12.0" prefWidth="14.0" ripplerFill="#454b61" style="-fx-border-radius: 100; -fx-background-radius: 100; -fx-background-color: #35394a;" styleClass="close-button" text=" " textFill="#d0d0d0">
+         <graphic>
+            <FontAwesomeIconView fill="#dc6180" glyphName="CLOSE" size="35" wrappingWidth="18.5" />
+         </graphic>
+      </JFXButton>
+      <AnchorPane fx:id="paneToDrag" layoutX="167.0" layoutY="2.0" prefHeight="133.0" prefWidth="863.0">
+         <children>
+            <Separator layoutX="77.0" layoutY="111.0" maxWidth="880.0" minWidth="-Infinity" prefHeight="11.0" prefWidth="811.0" />
+            <Label fx:id="autoparkName" alignment="CENTER" layoutX="18.0" layoutY="8.0" prefHeight="118.0" prefWidth="856.0" styleClass="name-field" text="Çakır Otopark" textAlignment="CENTER">
+               <font>
+                  <Font name="Old English Text MT" size="12.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <VBox layoutX="41.0" layoutY="158.0" prefHeight="492.0" prefWidth="206.0" spacing="10.0">
+         <children>
+            <JFXButton fx:id="vehicleEnters" buttonType="RAISED" onAction="#onVehicleEnters" prefHeight="45.0" prefWidth="242.0" ripplerFill="WHITE" styleClass="mainScreenButtons" stylesheets="@background.css" text="Araç Giriş" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="vehicleExits" buttonType="RAISED" onAction="#onVehicleExits" prefHeight="45.0" prefWidth="241.0" ripplerFill="WHITE" styleClass="mainScreenButtons" stylesheets="@background.css" text="Araç Çıkış" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="searchSubscription" buttonType="RAISED" onAction="#onSearchSubscription" prefHeight="45.0" prefWidth="211.0" ripplerFill="WHITE" styleClass="mainScreenButtons" stylesheets="@background.css" text="Abone Sorgula" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="addSubscription" buttonType="RAISED" onAction="#onAddSubscription" prefHeight="45.0" prefWidth="292.0" ripplerFill="WHITE" styleClass="mainScreenButtons" stylesheets="@background.css" text="Abone Ekle" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="searchVehicle" buttonType="RAISED" onAction="#onSearchVehicle" prefHeight="45.0" prefWidth="216.0" ripplerFill="WHITE" styleClass="mainScreenButtons" stylesheets="@background.css" text="Araç Sorgula" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="setToday" buttonType="RAISED" onAction="#onSetToday" prefHeight="45.0" prefWidth="225.0" ripplerFill="WHITE" styleClass="mainScreenButtons" stylesheets="@background.css" text="Tarih Ayarla" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="setHourlyFee" buttonType="RAISED" onAction="#onSetHourlyFee" prefHeight="45.0" prefWidth="220.0" ripplerFill="WHITE" styleClass="mainScreenButtons" stylesheets="@background.css" text="Ücret Ayarla" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="setCapacity" buttonType="RAISED" onAction="#onSetCapacity" prefHeight="45.0" prefWidth="206.0" ripplerFill="WHITE" styleClass="mainScreenButtons" stylesheets="@background.css" text="Kapasite Ayarla" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="centerPane" layoutX="279.0" layoutY="158.0" maxWidth="-Infinity" prefHeight="484.0" prefWidth="397.0" styleClass="logs" stylesheets="@background.css">
+         <children>
+            <AnchorPane fx:id="vehicleExitsPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="393.0" styleClass="centerPane" stylesheets="@background.css" visible="false">
+               <children>
+                  <AnchorPane fx:id="field" layoutX="49.0" layoutY="7.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="411.0" prefWidth="295.0" style="-fx-background-radius: 51; -fx-border-color: linear-gradient(from 0% 0% to 100% 100%,  #EA5C54  0%,#bb6dec 100%); -fx-border-width: 4; -fx-border-radius: 50;" styleClass="loginBackground" stylesheets="@background.css">
+                     <children>
+                        <JFXTextField fx:id="plateXML" focusColor="#ffffff00" layoutX="4.0" layoutY="122.0" prefHeight="40.0" prefWidth="287.0" promptText="Plaka" styleClass="login_fields" stylesheets="@background.css" unFocusColor="#4d4d4d00">
+                           <padding>
+                              <Insets left="55.0" right="65.0" />
+                           </padding>
+                        </JFXTextField>
+                        <JFXDatePicker fx:id="exitDateXML" defaultColor="#afb1be" layoutX="4.0" layoutY="160.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="287.0" promptText="Tarih" styleClass="date_picker" stylesheets="@background.css" />
+                        <JFXTimePicker fx:id="exitTimeXML" defaultColor="#afb1be" layoutX="4.0" layoutY="198.0" prefHeight="40.0" prefWidth="287.0" promptText="Saat" styleClass="time-picker" />
+                        <JFXButton fx:id="okayButton" buttonType="RAISED" layoutX="68.0" layoutY="321.0" onAction="#onOkayButton" prefHeight="45.0" prefWidth="159.0" ripplerFill="WHITE" styleClass="giris" stylesheets="@background.css" text="TAMAM" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <Label alignment="CENTER" layoutX="18.0" layoutY="36.0" prefHeight="73.0" prefWidth="259.0" styleClass="login" stylesheets="@background.css" text="Araç Çıkış" textAlignment="JUSTIFY" />
+                        <JFXCheckBox fx:id="vehicleExitsCheckBox" checkedColor="#109c5600" disable="true" layoutX="30.0" layoutY="255.0" prefHeight="31.0" prefWidth="234.0" styleClass="custom-jfx-check-box" stylesheets="@background.css" text=" " unCheckedColor="#59595900" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+      <JFXButton fx:id="minimize" buttonType="RAISED" layoutX="1075.0" layoutY="36.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#onMinimizeButton" prefHeight="45.0" prefWidth="42.0" ripplerFill="#21242f00" style="-fx-border-radius: 100; -fx-background-radius: 100;" text=" " textFill="#d0d0d0">
+         <graphic>
+            <MaterialDesignIconView fill="#dc6180" glyphName="WINDOW_MINIMIZE" size="35" wrappingWidth="22.0" />
+         </graphic>
+      </JFXButton>
+      <AnchorPane layoutX="659.0" layoutY="491.0" prefHeight="375.0" prefWidth="528.0">
+         <children>
+            <TableView fx:id="subscriptionTableView" layoutY="33.0" prefHeight="342.0" prefWidth="528.0">
+              <columns>
+                <TableColumn fx:id="plateColumn" editable="false" prefWidth="117.0" text="Plaka" />
+                <TableColumn fx:id="startDateColumn" editable="false" prefWidth="100.0" text="Başlangıç" />
+                  <TableColumn fx:id="endDateColumn" editable="false" prefWidth="104.0" text="Bitiş" />
+                  <TableColumn fx:id="paidColumnSub" prefWidth="75.0" text="Ödenen" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <Label alignment="CENTER" layoutY="2.0" prefHeight="32.0" prefWidth="528.0" style="-fx-border-color: dc6180; -fx-background-color: #1f222e; -fx-border-width: 2;" text="Abonelik Kayıtları" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="logsTable" layoutX="659.0" layoutY="158.0" prefHeight="335.0" prefWidth="528.0">
+        <columns>
+          <TableColumn fx:id="plateColumnLog" prefWidth="116.0" resizable="false" text="Plaka" />
+          <TableColumn fx:id="enterDate" prefWidth="87.0" resizable="false" text="Giriş Tarihi" />
+            <TableColumn fx:id="enterHour" prefWidth="81.0" resizable="false" text="Giriş Saati" />
+            <TableColumn fx:id="exitDate" prefWidth="82.0" resizable="false" text="Çıkış Tarihi" />
+            <TableColumn fx:id="exitHour" prefWidth="81.0" resizable="false" text="Çıkış Saati" />
+            <TableColumn fx:id="paidColumn" prefWidth="72.0" text="Ödenen" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label alignment="CENTER" layoutX="659.0" layoutY="127.0" prefHeight="32.0" prefWidth="528.0" style="-fx-border-color: dc6180; -fx-background-color: #1f222e; -fx-border-width: 2;" text="Otopark Kayıtları" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <HBox layoutX="384.0" layoutY="625.0" prefHeight="241.0" prefWidth="393.0">
+         <children>
+            <VBox prefHeight="241.0" prefWidth="139.0" styleClass="info">
+               <children>
+                  <Label prefHeight="40.0" prefWidth="215.0" styleClass="info" text="Günlük Gelir:" />
+                  <Label prefHeight="40.0" prefWidth="255.0" styleClass="info" text="Saatlik Ücret:" />
+                  <Label prefHeight="40.0" prefWidth="280.0" styleClass="info" text="Günlük Abonelik:" />
+                  <Label prefHeight="40.0" prefWidth="390.0" styleClass="info" text="Mevcut Araç:" />
+                  <Label prefHeight="40.0" prefWidth="385.0" styleClass="info" text="Max Kapasite:" />
+                  <Label prefHeight="40.0" prefWidth="293.0" styleClass="info" text="Mevcut Tarih:" />
+               </children>
+            </VBox>
+            <VBox prefHeight="241.0" prefWidth="135.0">
+               <children>
+                  <Label fx:id="infoIncome" prefHeight="40.0" prefWidth="215.0" styleClass="info" text="0 ₺" />
+                  <Label fx:id="infoHourly" prefHeight="40.0" prefWidth="255.0" styleClass="info" text="0 ₺" />
+                  <Label fx:id="infoDaily" prefHeight="40.0" prefWidth="280.0" styleClass="info" text="0 ₺" />
+                  <Label fx:id="infoOccupancy" prefHeight="40.0" prefWidth="390.0" styleClass="info" text="0" />
+                  <Label fx:id="infoCapacity" prefHeight="40.0" prefWidth="385.0" styleClass="info" text="0" />
+                  <Label fx:id="infoDate" prefHeight="40.0" prefWidth="293.0" styleClass="info" text="0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

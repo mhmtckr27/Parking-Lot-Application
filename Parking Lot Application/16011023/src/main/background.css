@@ -1,0 +1,355 @@
+.backgroundBody{
+    -fx-background-image: url('loginBackground.jpeg');
+    -fx-background-size: 100% 100%;
+
+}
+
+.mainScreenBackground{
+    -fx-background-color: linear-gradient(to top,  #35394a,#1f222e);
+    -fx-background-size: 100;
+}
+
+.loginBackground{
+    -fx-background-color: linear-gradient(to top,repeat,  #35394a,#1f222e);
+    -fx-border-color: linear-gradient(from 0% 0% to 100% 100%,  #EA5C54  0%,#bb6dec 100%);
+    -fx-background-size: 100;
+}
+.name-field{
+    -fx-font-family: 'Opificio Neue', sans-serif;
+    -fx-font-size: 50;
+    -fx-text-fill: #ffff;
+    -fx-background-color: TRANSPARENT;
+}
+.welcome{
+    -fx-font-family: 'Opificio Neue', sans-serif;
+    -fx-font-size: 100;
+    -fx-text-fill: #ffff;
+    -fx-background-color: TRANSPARENT;
+}
+
+
+.info{
+    -fx-font-family: 'Opificio Neue', sans-serif;
+    -fx-font-size: 15;
+    -fx-text-fill: #dc6180;
+    -fx-background-color: TRANSPARENT;
+}
+
+.login{
+    -fx-font-family: 'Opificio Neue', sans-serif;
+    -fx-font-size: 30;
+    -fx-text-fill: #afb1be;
+    -fx-background-color: TRANSPARENT;
+}
+.login_fields {
+     -fx-text-fill: #afb1be;
+     -fx-prompt-text-fill: #5B5E6F;
+     -fx-font-size: 17;
+     -fx-background-color: #32364a;
+     -fx-border-radius: 2px;
+     -fx-padding: 0 65 0 55;
+     -fx-border-width: 2 0 2 0;
+     -fx-border-color:  #393d52;
+     -fx-font-family: 'Opificio Neue', sans-serif;
+ }
+.login_fields:focused{
+    -fx-text-fill: #dc6180;
+}
+.date_picker .text-field{
+    -fx-text-fill: #afb1be;
+    -fx-prompt-text-fill: #5B5E6F;
+    -fx-font-size: 15;
+    -fx-padding: 10px 55px;
+    -fx-background-color: #32364a;
+    -fx-border-radius: 2px;
+    -fx-border-width: 2 0 2 0;
+
+    -jfx-unfocus-color:TRANSPARENT;
+    -jfx-focus-color:TRANSPARENT;
+    -fx-border-color:  #393d52;
+    -fx-font-family: 'Opificio Neue', sans-serif;
+}
+
+.date-picker > .date-picker-display-node {
+    -fx-border-insets: 0 -2 0 0;
+}
+
+.date-picker > .arrow-button
+{
+    -fx-background-color: #32364a;
+    -fx-border-color: #393d52;
+    -fx-border-radius: 2px;
+    -fx-border-width: 2 0 2 0;
+}
+.date-picker .text-field:focused{
+    -fx-text-fill: #dc6180;
+}
+.date-picker .button {
+    -fx-background-color: #afb1be;
+    -fx-border-color: WHITE;
+    -fx-border-width: 2;
+    -fx-pref-height: 35px;
+    -fx-pref-width: 35px;
+}
+.date-picker .button:hover {
+    -fx-background-color: #dc6180;
+    -fx-pref-height: 35px;
+    -fx-pref-width: 35px;
+}
+
+.date-picker-popup  {
+    -fx-background-color: #35394a;
+}
+.date-picker-popup > .month-year-pane {
+    -fx-background-color: #1f222e;
+}
+.date-picker-popup > * > .date-picker-list-view > .virtual-flow > .clipped-container > .sheet > .data-picker-list-cell:selected-year {
+    -fx-font-size: 24;
+    -fx-font-weight: BOLD;
+    -fx-text-fill: #dc6180;
+}
+.date-picker-popup > * > .date-picker-list-view > .virtual-flow > .clipped-container > .sheet > .data-picker-list-cell {
+    -fx-font-size: 16;
+    -fx-font-weight: NORMAL;
+    -fx-background-color: #35394a;
+    -fx-alignment: center;
+    -fx-text-fill: #afb1be;
+}
+.date-picker .label{
+    -fx-text-fill: #afb1be;
+}
+
+.date-picker .cell {
+    -fx-background-color: #35394a;
+    -fx-text-fill: #afb1be;
+}
+.date-picker .cell:hover {
+    -fx-background-color: #dc6180;
+}
+.date-picker .cell:focused {
+    -fx-background-color:#dc6180;
+}
+.giris {
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-background-color: transparent;
+    -fx-padding: 10px 50px;
+    -fx-border-width: 2px;
+    -fx-border-color: #DC6180;
+    -fx-text-fill: #DC6180;
+}
+
+
+.giris:hover {
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #dc6180;
+}
+.giris:focused {
+ }
+.giris .jfx-rippler{
+    -jfx-rippler-fill: WHITE;
+}
+.giris:pressed .jfx-rippler{
+    -jfx-rippler-fill: WHITE;
+}
+
+.mainScreenButtons{
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-background-color: transparent;
+    -fx-padding: 10px 50px;
+    -fx-border-width: 2px;
+    -fx-border-color: #DC6180;
+    -fx-text-fill: #ffff;
+}
+.mainScreenButtons:hover{
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #dc6180;
+}
+
+.logs{
+    -fx-background-color: transparent;
+    -fx-border-color: #dc6180;
+    -fx-border-width: 0;
+}
+.logs-list{
+    -fx-border-color: #dc6180;
+    -fx-border-width: 2 0 0 0;
+    -fx-background-color: TRANSPARENT;
+}
+.logs-titles{
+    -fx-font-family: 'Opificio Neue', sans-serif;
+    -fx-font-size: 20;
+    -fx-text-fill: #afb1be;
+    -fx-background-color: TRANSPARENT;
+    -fx-alignment: CENTER;
+}
+
+.table-view{
+    -fx-background-color: TRANSPARENT;
+    -fx-border-color: #DC6180;
+    -fx-border-width: 2;
+    -fx-padding: 0 0 0 -1 ;
+}
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+.table-view .column-header{
+    -fx-background-color: transparent;
+}
+.table-view .column-header-background .label{
+    -fx-background-color: #1f222e;
+    -fx-text-fill: WHITE;
+    -fx-font-family: 'Calibri Light';
+    -fx-font-size: 15;
+    -fx-alignment: CENTER_LEFT;
+}
+.table-view .column-header-background{
+    -fx-background-color: #DC6180;
+    -fx-border-color: #DC6180;
+    -fx-border-width: 0 0 3 0;
+}
+
+.table-view .cell{
+    -fx-background-color: #1f222e;
+    -fx-border-color: #afb1be;
+    -fx-cell-size: 30;
+    -fx-text-fill: WHITE;
+    -fx-font-size: 13;
+
+}
+.table-view .virtual-flow{
+    -fx-background-color: YELLOW;
+}
+.table-view .cell:filled{
+    -fx-background-color: #35394a;
+}
+
+.table-view .column-resize-line{
+    -fx-background-color: #DC6180;
+}
+
+.table-view .filler{
+    -fx-background-color: #1f222e;
+    -fx-border-radius: 50;
+}
+.table-view .column-drag-header{
+    -fx-background-color: #DC6180;
+}
+
+.centerPane{
+    -fx-background-color: transparent;
+}
+
+.custom-jfx-check-box {
+    -jfx-checked-color: TRANSPARENT;
+    -jfx-unchecked-color: TRANSPARENT;
+    -fx-font-family: 'Opificio Neue', sans-serif;
+    -fx-font-size: 16;
+    -fx-text-fill: WHITE;
+    -fx-opacity: 1;
+}
+.custom-jfx-check-box-not-white{
+    -jfx-checked-color: TRANSPARENT;
+    -jfx-unchecked-color: TRANSPARENT;
+    -fx-font-family: 'Opificio Neue', sans-serif;
+    -fx-font-size: 16;
+    -fx-text-fill: #afb1be;
+    -fx-opacity: 1;
+}
+.custom-jfx-check-box .box{
+    -fx-pref-height: 30;
+    -fx-pref-width: 30;
+}
+
+.custom-jfx-check-box-read{
+    -jfx-checked-color: transparent;
+    -jfx-unchecked-color: #afb1be;
+    -fx-font-family: 'Opificio Neue', sans-serif;
+    -fx-font-size: 15;
+    -fx-text-fill: #afb1be;
+}
+.custom-jfx-check-box-read:selected{
+    -fx-text-fill: WHITE;
+}
+.custom-jfx-check-box-read .mark{
+    -fx-border-color: #119b54;
+    -fx-max-width: 15;
+    -fx-max-height: 12;
+}
+
+.custom-jfx-check-box .indeterminate-mark{
+    -fx-background-color: #dc6180;
+}
+
+.custom-jfx-check-box .mark{
+    -fx-border-color: #119b54;
+    -fx-max-width: 15;
+    -fx-max-height: 12;
+}
+
+.time-picker .text-field{
+    -fx-text-fill: #afb1be;
+    -fx-prompt-text-fill: #5B5E6F;
+    -fx-font-size: 15;
+    -fx-padding: 10px 55px;
+    -fx-background-color: #32364a;
+    -fx-border-radius: 2px;
+    -fx-border-width: 2 0 2 0;
+
+    -jfx-unfocus-color:TRANSPARENT;
+    -jfx-focus-color:TRANSPARENT;
+    -fx-border-color:  #393d52;
+    -fx-font-family: 'Opificio Neue', sans-serif;
+}
+
+.time-picker{
+    -fx-background-color: TRANSPARENT;
+    -jfx-default-color: #1f222e;
+
+}
+
+.time-picker > .date-picker-display-node {
+    -fx-border-insets: 0 -2 0 0;
+}
+
+.time-picker > .arrow-button {
+    -fx-background-color: #32364a;
+    -fx-border-color: #393d52;
+    -fx-border-radius: 2px;
+    -fx-border-width: 2 0 2 0;
+}
+.time-picker > .arrow-button > .jfx-svg-glyph{
+    -fx-background-color: #afb1be;
+}
+.time-picker:selected{
+    -fx-text-fill: YELLOW;
+    -fx-background-color: YELLOW;
+
+}
+.time-picker .text-field:focused{
+    -fx-text-fill: #dc6180;
+}
+.time-picker .button {
+    -fx-background-color: #afb1be;
+    -fx-border-color: WHITE;
+    -fx-border-width: 2;
+    -fx-pref-height: 35px;
+    -fx-pref-width: 35px;
+}
+.time-picker .button:hover {
+    -fx-background-color: #dc6180;
+    -fx-pref-height: 35px;
+    -fx-pref-width: 35px;
+}
+
+.time-picker > .spinner{
+    -fx-background-color: YELLOW;
+}
+.time-picker BorderPane{
+    -fx-background-color: #32364a;
+}
+
+.time-picker BorderPane Circle{
+    -fx-fill: WHITE;
+}

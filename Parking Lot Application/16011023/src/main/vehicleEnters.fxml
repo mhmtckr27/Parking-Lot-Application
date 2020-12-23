@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="393.0" styleClass="centerPane" stylesheets="@background.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.VehicleEntersController">
+   <children>
+      <AnchorPane fx:id="field" layoutX="49.0" layoutY="7.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="411.0" prefWidth="295.0" style="-fx-background-radius: 51; -fx-border-color: linear-gradient(from 0% 0% to 100% 100%,  #EA5C54  0%,#bb6dec 100%); -fx-border-width: 4; -fx-border-radius: 50;" styleClass="loginBackground" stylesheets="@background.css">
+         <children>
+            <JFXTextField fx:id="plate" focusColor="#ffffff00" layoutX="4.0" layoutY="122.0" prefHeight="40.0" prefWidth="287.0" promptText="Plaka" styleClass="login_fields" stylesheets="@background.css" unFocusColor="#4d4d4d00">
+               <padding>
+                  <Insets left="55.0" right="65.0" />
+               </padding>
+            </JFXTextField>
+            <JFXDatePicker fx:id="enterDateXML" defaultColor="#afb1be" layoutX="4.0" layoutY="160.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="287.0" promptText="Tarih" styleClass="date_picker" stylesheets="@background.css" />
+            <JFXTimePicker fx:id="enterTimeXML" defaultColor="#afb1be" layoutX="4.0" layoutY="198.0" prefHeight="40.0" prefWidth="287.0" promptText="Saat" styleClass="time-picker" />
+            <JFXToggleButton fx:id="isOfficialToggle" layoutX="64.0" layoutY="234.0" prefHeight="58.0" prefWidth="176.0" text=" " toggleColor="#dc6180" toggleLineColor="WHITE" unToggleColor="#dc6180" unToggleLineColor="WHITE" />
+            <JFXButton fx:id="okayButton" buttonType="RAISED" layoutX="68.0" layoutY="321.0" onAction="#onOkayButton" prefHeight="45.0" prefWidth="159.0" ripplerFill="WHITE" styleClass="giris" stylesheets="@background.css" text="TAMAM" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <Label alignment="CENTER" layoutX="18.0" layoutY="36.0" prefHeight="73.0" prefWidth="259.0" styleClass="login" stylesheets="@background.css" text="Araç Giriş" textAlignment="JUSTIFY" />
+            <JFXCheckBox fx:id="vehicleEntersCheckBox" checkedColor="#109c5600" disable="true" layoutX="30.0" layoutY="280.0" prefHeight="31.0" prefWidth="234.0" styleClass="custom-jfx-check-box" stylesheets="@background.css" text=" " unCheckedColor="#59595900" />
+            <Label fx:id="capacityInfoLabel1" alignment="CENTER_RIGHT" layoutX="16.0" layoutY="240.0" prefHeight="45.0" prefWidth="99.0" styleClass="custom-jfx-check-box-not-white" text="Kişisel Araç" />
+            <Label fx:id="capacityInfoLabel11" alignment="CENTER_RIGHT" layoutX="172.0" layoutY="240.0" prefHeight="45.0" prefWidth="99.0" styleClass="custom-jfx-check-box-not-white" text="Kamu Aracı" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

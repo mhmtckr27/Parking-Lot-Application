@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainFrame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1000.0" style="-fx-border-color: #424242; -fx-border-width: 5; -fx-border-radius: 90; -fx-background-radius: 100;" styleClass="backgroundBody" stylesheets="@background.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.FirstScreenController">
+   <children>
+      <AnchorPane fx:id="loginField" layoutX="668.0" layoutY="125.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="411.0" prefWidth="295.0" style="-fx-background-radius: 51; -fx-border-color: #424242; -fx-border-width: 2; -fx-border-radius: 50;" styleClass="loginBackground" stylesheets="@background.css">
+         <children>
+            <Label alignment="CENTER" layoutX="32.0" layoutY="34.0" prefHeight="73.0" prefWidth="210.0" styleClass="login" stylesheets="@background.css" text="Giriş yapın" textAlignment="JUSTIFY" />
+            <JFXTextField fx:id="autoparkName" focusColor="#ffffff00" layoutX="1.0" layoutY="122.0" prefHeight="35.0" prefWidth="292.0" promptText="Otopark adı" styleClass="login_fields" stylesheets="@background.css" unFocusColor="#4d4d4d00">
+               <padding>
+                  <Insets left="55.0" right="65.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="hourlyFee" focusColor="#ffffff00" layoutX="1.0" layoutY="155.0" prefHeight="35.0" prefWidth="292.0" promptText="Saatlik ücret" styleClass="login_fields" stylesheets="@background.css" unFocusColor="#4d4d4d00">
+               <padding>
+                  <Insets left="55.0" right="65.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="dailySubscriptionFee" focusColor="#ffffff00" layoutX="1.0" layoutY="188.0" prefHeight="35.0" prefWidth="292.0" promptText="Günlük ücret" styleClass="login_fields" stylesheets="@background.css" unFocusColor="#4d4d4d00">
+               <padding>
+                  <Insets left="55.0" right="65.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="capacityXML" focusColor="#ffffff00" layoutX="1.0" layoutY="221.0" prefHeight="35.0" prefWidth="292.0" promptText="Kapasite" styleClass="login_fields" stylesheets="@background.css" unFocusColor="#4d4d4d00">
+               <padding>
+                  <Insets left="55.0" right="65.0" />
+               </padding>
+            </JFXTextField>
+            <JFXDatePicker fx:id="todayDate" defaultColor="#afb1be" layoutX="1.0" layoutY="254.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="293.0" promptText="Tarih" styleClass="date_picker" stylesheets="@background.css" />
+            <JFXButton fx:id="open" buttonType="RAISED" layoutX="77.0" layoutY="322.0" onAction="#onOpenButton" onKeyPressed="#onEnterPressed" prefHeight="35.0" prefWidth="140.0" ripplerFill="BLACK" styleClass="giris" stylesheets="@background.css" text="GİRİŞ" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></JFXButton>
+            <ImageView fitHeight="35.0" fitWidth="30.0" layoutX="26.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@user_icon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="welcome" alignment="CENTER" layoutX="24.0" layoutY="247.0" prefHeight="166.0" prefWidth="589.0" styleClass="welcome" stylesheets="@background.css" text="Hoşgeldiniz!" textAlignment="CENTER" />
+      <JFXButton fx:id="close" buttonType="RAISED" layoutX="921.0" layoutY="24.0" onAction="#onCloseButton" prefHeight="12.0" prefWidth="14.0" style="-fx-border-radius: 100; -fx-background-color: #1f222e; -fx-background-radius: 100;" text=" " textFill="#d0d0d0">
+         <graphic>
+            <FontAwesomeIconView fill="#dc6180" glyphName="CLOSE" size="35" wrappingWidth="18.5" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="minimize" buttonType="RAISED" layoutX="873.0" layoutY="31.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#onMinimizeButton" prefHeight="45.0" prefWidth="42.0" ripplerFill="#0e273b00" style="-fx-border-radius: 100; -fx-background-radius: 100;" text=" " textFill="#d0d0d0">
+         <graphic>
+            <MaterialDesignIconView fill="#dc6180" glyphName="WINDOW_MINIMIZE" size="35" wrappingWidth="22.0" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>
